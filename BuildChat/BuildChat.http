@@ -1,0 +1,6 @@
+@BuildChat_HostAddress = http://localhost:5138
+
+GET {{BuildChat_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
