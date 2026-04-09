@@ -9,7 +9,7 @@
         // Task Relationship
         
         public int TaskId { get; set; }
-        public TaskItems TaskItem { get; set; } = new TaskItems();
+        public TaskItems TaskItems { get; set; } = new TaskItems();
 
         // User relationship
     }

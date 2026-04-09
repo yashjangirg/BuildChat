@@ -14,5 +14,11 @@
 
         //public Users Users { get; set; } 
 
+        //Tasks relationship
+        public ICollection<TaskItems> TaskItems { get; set; } = new List<TaskItems>();
+
+        //ProjectMembers relationship
+        public ICollection<ProjectMembers> ProjectMembers { get; set; } = new List<ProjectMembers>();
+
     }
 }

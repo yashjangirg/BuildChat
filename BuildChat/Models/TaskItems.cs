@@ -21,5 +21,8 @@
 
        
         public Projects Project { get; set; } = new Projects();
+
+        //Task Assignment
+        public ICollection<TaskAssignment> TaskAssignments { get; set; }
     }
 }
