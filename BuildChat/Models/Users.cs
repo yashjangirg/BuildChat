@@ -7,16 +7,21 @@
         public string UserEmail { get; set; } = string.Empty;
 
         // User can create multiple Project
-        //public List<Projects> Projects { get; set; } = new List<Projects>();
-        public ICollection<TaskItems> TaskItems { get; set; } = new List<TaskItems>();
+        public List<Projects>? Projects { get; set; }
+        public ICollection<TaskItems>? TaskItems { get; set; } 
 
-        public ICollection<TaskAssignment> TaskAssignments { get; set; } = new List<TaskAssignment>();
+        public ICollection<TaskAssignment>? TaskAssignments { get; set; }
 
-        //rojectMembers relationship
+        //ProjectMembers relationship/ Task Assignment relationship k liy
 
-        //public ICollection<ProjectMembers> ProjectMembers { get; set; } = new List<ProjectMembers>();
+        public ICollection<ProjectMembers>? ProjectMembers { get; set; }
 
-        public ICollection<Comments> Comments { get; set; } = new List<Comments>();
+        //Comments relationship k liy
+        public ICollection<Comments>? Comments { get; set; }
+
+        //User can Create multiple TaskItems
+        public ICollection<UserRole>? UserRoles { get; set; }
+        
     }
 }
 

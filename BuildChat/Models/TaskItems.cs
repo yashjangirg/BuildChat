@@ -13,16 +13,16 @@
         //OwnerShip k liy
 
         public int CreatorId { get; set; }
-        public Users Creator { get; set; } = new Users();
+        public Users? Creator { get; set; }
 
 
         //Project k sath relation k liy
          public int ProjectId { get; set; }
-
        
-        public Projects Project { get; set; } = new Projects();
+        public Projects? Projects { get; set; } 
 
         //Task Assignment
-        public ICollection<TaskAssignment> TaskAssignments { get; set; }
+        public ICollection<TaskAssignment>? TaskAssignments { get; set; } 
+         public ICollection<Comments>? Comments { get; set; }
     }
 }

@@ -10,15 +10,16 @@
         //OwnerShip k liy
 
         public int CreatorId { get; set; }
-        public Users Creator { get; set; } = new Users();
+        //public Users Creator { get; set; } = new Users();
+        public Users? Creator { get; set; }
 
         //public Users Users { get; set; } 
 
         //Tasks relationship
-        public ICollection<TaskItems> TaskItems { get; set; } = new List<TaskItems>();
+        public ICollection<TaskItems>? TaskItems { get; set; } 
 
         //ProjectMembers relationship
-        public ICollection<ProjectMembers> ProjectMembers { get; set; } = new List<ProjectMembers>();
+        public ICollection<ProjectMembers>? ProjectMembers { get; set; } 
 
     }
 }
