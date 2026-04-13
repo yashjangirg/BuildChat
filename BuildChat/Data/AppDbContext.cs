@@ -156,7 +156,8 @@ namespace BuildChat.Data
                 entitys.HasOne(ur => ur.Users)
                         .WithMany(u => u.UserRoles)
                         .HasForeignKey(ur => ur.UserId)
-                        .OnDelete(DeleteBehavior.Cascade);
+                        //.OnDelete(DeleteBehavior.Cascade);
+                        .OnDelete(DeleteBehavior.Restrict); // ✅ FIX
 
                 //Roles relationship (Roles --> UserRoles)
                 entitys.HasOne(ur => ur.Roles)
